@@ -1,0 +1,16 @@
+<DOCUMENTS>
+	<DOCUMENT ID="1" CAPTION="Документ1" TOTAL_AMOUNT="6">
+		<DETAIL ID="1" CAPTION="Расшифровка1" AMOUNT="1" />
+		<DETAIL ID="2" CAPTION="Расшифровка2" AMOUNT="2" />
+		<DETAIL ID="3" CAPTION="Расшифровка3" AMOUNT="3" />
+	</DOCUMENT>
+	<DOCUMENT ID="2" CAPTION="Документ2" TOTAL_AMOUNT="6">
+		<DETAIL ID="1" CAPTION="Расшифровка1" AMOUNT="1" />
+		<DETAIL ID="2" CAPTION="Расшифровка2" AMOUNT="2" >
+			<SUBDETAIL ID="1" CAPTION="РасшифровкаРасшифровки1" AMOUNT="1" />
+			<SUBDETAIL ID="2" CAPTION="РасшифровкаРасшифровки2" AMOUNT="1" />
+		</DETAIL>
+	</DOCUMENT>
+	<DOCUMENT ID="3" CAPTION="Документ3">
+	</DOCUMENT>
+</DOCUMENTS>

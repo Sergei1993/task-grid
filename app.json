@@ -1,0 +1,79 @@
+{
+  "name": "TaskGrid",
+  "version": "1.0.0.0",
+  "indexHtmlPath": "index.html",
+  "classpath": "${app.dir}/app",
+  "overrides": "${app.dir}/overrides",
+  "framework": "ext",
+  "theme": "ext-theme-neptune",
+  "requires": [],
+
+  "sass": {
+    "namespace": "TaskGrid"
+  },
+
+  "js": [
+    {
+      "path": "${framework.dir}/build/ext-all-rtl-debug.js"
+    },
+    {
+      "path": "app.js",
+      "bundle": true
+    }
+  ],
+
+  "css": [
+    {
+      "path": "bootstrap.css",
+      "bootstrap": true
+    }
+  ],
+
+  "production": {
+  },
+  "testing": {
+  },
+  "development": {
+  },
+
+  "bootstrap": {
+    "base": "${app.dir}",
+    "manifest": "bootstrap.json",
+    "microloader": "bootstrap.js",
+    "css": "bootstrap.css"
+  },
+
+  "output": {
+    "base": "${workspace.build.dir}/${build.environment}/${app.name}"
+  },
+
+  "appCache": {
+    "cache": [
+      "index.html"
+    ],
+    "network": [
+      "*"
+    ],
+    "fallback": []
+  },
+
+  "resources": [
+  ],
+
+  "ignore": [
+    "(^|/)CVS(/?$|/.*?$)"
+  ],
+
+  "archivePath": "archive",
+
+  "slicer": {
+    "js": [
+      {
+        "path": "${app.dir}/sass/example/custom.js",
+        "isWidgetManifest": true
+      }
+    ]
+  },
+
+  "id": "8ed1c1a1-c9db-4a9c-86f7-6d8168811df7"
+}
