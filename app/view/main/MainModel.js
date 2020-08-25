@@ -9,7 +9,12 @@ Ext.define('TaskGrid.view.main.MainModel', {
 
     stores: {
         documentStore: {
-            type: 'task-store'
+            type: 'tree',
+            model: 'TaskGrid.model.task.Document',
+            root: {
+                expanded: true,
+                children: []
+            }
         }
     }
 });

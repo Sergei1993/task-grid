@@ -26,7 +26,7 @@ Ext.define('TaskGrid.view.main.MainController', {
         })(file);
     },
 
-    parseTextToXml: function (text){
+    parseTextToXml: function (text) {
         var xmlDoc;
         if (window.DOMParser) {
             var parser = new DOMParser();
@@ -61,7 +61,13 @@ Ext.define('TaskGrid.view.main.MainController', {
 
         var documentsRoot = this.getDocumentsRoot(storeDocument),
             documentStore = Ext.create('Ext.data.TreeStore', {
-                root: documentsRoot
+                root: documentsRoot,
+                sorters: [
+                    {
+                        property: 'idDoc',
+                        direction: 'ASC'
+                    }
+                ]
             });
         this.getViewModel().set('documentStore', documentStore)
     },
